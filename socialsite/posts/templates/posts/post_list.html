@@ -10,7 +10,7 @@
                 {% for member_group in get_user_groups %}
                 <li class="group li-with-bullet">
                     <a href="{% url 'groups:single' slug=member_group.group.slug %}">
-                        {{}}
+                       
                     </a>
             </li>
                 {% endfor %}

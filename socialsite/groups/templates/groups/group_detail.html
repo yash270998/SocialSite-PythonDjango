@@ -3,7 +3,7 @@
 <h1>{{group.name}}</h1>
 <h2>Member Count: {{group.members.count}}</h2>
 <div class="content">
-    {% is user in group.members.all %}
+    {% if user in group.members.all %}
     <a href="{%url 'groups:leave' slug=group.slug %}" 
     class="btn btn-lg btn-warning"><span class="glyphicon glyphicon-remove-circle"></span>Leave</a>
     {% else %}

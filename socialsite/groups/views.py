@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.urls import reverse
 from django.views.generic import CreateView,DetailView, ListView, RedirectView
 from groups.models import Group, GroupMember
+from . import models
 from django.shortcuts import get_object_or_404
 class CreateGroup(LoginRequiredMixin,CreateView):
     fields = ('name','description')
